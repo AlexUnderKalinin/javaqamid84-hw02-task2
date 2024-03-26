@@ -1,21 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        int accountBalance = 100;
-        int amountOfDeposit = 1100;
-        boolean b = amountOfDeposit > 1000;
+        int balance = 100;
+        int deposit = 1100;
+        //     boolean b = amountOfDeposit > 1000;
 
-        int amount;
-        if (b) {
-            amount = 1;
-        } else {
+        int amount = 0;
+        if (deposit <= 1000) {
             amount = 0;
+        } else {
+            amount = 1;
         }
 
-        int bonus = amountOfDeposit * amount / 100;
-        int finalAccountBalance = accountBalance + amountOfDeposit + bonus;
+        int bonus = deposit * amount / 100;
+        int finalBalance = balance + deposit + bonus;
 
-        System.out.println("Депозит: " + amountOfDeposit + " рублей");
+        System.out.println("Депозит: " + deposit + " рублей");
         System.out.println("Ваш бонус: " + bonus + " рублей");
-        System.out.println("Итоговый счет: " + finalAccountBalance + " рублей");
+        System.out.println("Итоговый счет: " + finalBalance + " рублей");
     }
 }
