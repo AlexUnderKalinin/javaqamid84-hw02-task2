@@ -4,7 +4,7 @@ public class Main {
         int deposit = 1100;
         //     boolean b = amountOfDeposit > 1000;
 
-        int amount;git
+        int amount;
         if (deposit <= 1000) {
             amount = 0;
         } else {
